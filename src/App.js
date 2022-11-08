@@ -44,30 +44,15 @@ const App = () => {
       
           if (eachWord[0] === vowelsArray[0]) {
             return eachWord + "way"
-        } else if (eachWord.slice(0, 2) === "qu") {
-            return eachWord + "oof"
+        } else if (eachWord.indexOf("u") -1 === eachWord.indexOf("q")) {
+            let eachWord2 = eachWord.slice(0, eachWord.indexOf("u") +1 )
+            let eachWord3 = eachWord.slice(eachWord.indexOf("u") +1 )
+          return eachWord3 + eachWord2 + "ay"
         } else {
             return eachWord
           }
-    
+  
 
-        // for (let i = 0; i < eachWord.length; i++) {
-        //   if (eachWord[0, 1] = ["q", "u"]) {
-        //     let newArr = eachWord.slice(2)
-        //     return 
-        //   }
-        // }
-
-
-        // if ( eachWord[0] === vowelsArray[0]) {
-        //   return eachWord + "way"
-        // } else if (eachWord.slice(0, 2) === ["q", "u"]) {
-        //   return eachWord + eachWord2 +"ay"
-        // } else {
-        //   return eachWord
-        // }
-
-    
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
