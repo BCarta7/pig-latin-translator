@@ -41,7 +41,7 @@ const App = () => {
           // else, move all consonents before first vowel to end, add ay
         // return modified "eachWord" based on conditional
 
-        for (let i = 0; i < eachWord.length; i++) {
+      
           if (eachWord[0] === vowelsArray[0]) {
             return eachWord + "way"
         } else if (eachWord.slice(0, 2) === "qu") {
@@ -49,7 +49,7 @@ const App = () => {
         } else {
             return eachWord
           }
-        }
+    
 
         // for (let i = 0; i < eachWord.length; i++) {
         //   if (eachWord[0, 1] = ["q", "u"]) {
