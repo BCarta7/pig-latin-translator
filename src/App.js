@@ -32,6 +32,40 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
+        // input: vowelsArray, eachWord
+        // output: modified "eachWord" variable
+        // Create conditional:
+          // vowels first, add way to end of string
+          // "qu" first, move "qu" and any consonents before first vowel to end of string, add ay
+          // "y" only, move all consonants behind "y", add ay
+          // else, move all consonents before first vowel to end, add ay
+        // return modified "eachWord" based on conditional
+
+      
+          if (eachWord[0] === vowelsArray[0]) {
+            return eachWord + "way"
+        } else if (eachWord.slice(0, 2) === "qu") {
+            return eachWord + "oof"
+        } else {
+            return eachWord
+          }
+    
+
+        // for (let i = 0; i < eachWord.length; i++) {
+        //   if (eachWord[0, 1] = ["q", "u"]) {
+        //     let newArr = eachWord.slice(2)
+        //     return 
+        //   }
+        // }
+
+
+        // if ( eachWord[0] === vowelsArray[0]) {
+        //   return eachWord + "way"
+        // } else if (eachWord.slice(0, 2) === ["q", "u"]) {
+        //   return eachWord + eachWord2 +"ay"
+        // } else {
+        //   return eachWord
+        // }
 
     
 
