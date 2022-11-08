@@ -52,6 +52,10 @@ const App = () => {
           let eachWord2 = eachWord.slice(0, eachWord.indexOf("y"))
           let eachWord3 = eachWord.slice(eachWord.indexOf("y"))
           return eachWord3 + eachWord2 + "ay"
+        } else if (eachWord[0] !== vowelsArray[0]) {
+          let eachWord2 = eachWord.slice(0, eachWord.indexOf(vowelsArray[0]))
+          let eachWord3 = eachWord.slice(eachWord.indexOf(vowelsArray[0]))
+          return eachWord3 + eachWord2 + "ay"
         }
         else {
             return eachWord
