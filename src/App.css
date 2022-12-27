@@ -36,6 +36,8 @@ button {
   border-radius: .5rem;
   color: #fff;
   margin: 1rem;
+  margin-left: 30vh;
+  margin-right: 30vh;
   padding: 1rem;
 }
 
